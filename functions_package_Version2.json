@@ -1,0 +1,19 @@
+{
+  "name": "functions",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "lint": "eslint . || true",
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "test": "mocha --exit"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
